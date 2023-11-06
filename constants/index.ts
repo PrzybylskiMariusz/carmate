@@ -1,5 +1,11 @@
 import { SidebarLinks } from "@/types";
 
+export const themes = [
+	{ value: "light", label: "Jasny", icon: "/assets/icons/sun.svg" },
+	{ value: "dark", label: "Ciemny", icon: "/assets/icons/moon.svg" },
+	{ value: "system", label: "System", icon: "/assets/icons/desktop.svg" },
+];
+
 export const sidebarLinks: SidebarLinks[] = [
 	{
 		imgUrl: "/assets/icons/estate.svg",

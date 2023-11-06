@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/context/ThemeProvider";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import React from "react";
@@ -24,7 +25,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="pl">
-			<body className={poppins.variable}>{children}</body>
+			<body className={poppins.variable}>
+				<ThemeProvider>{children}</ThemeProvider>
+			</body>
 		</html>
 	);
 }
