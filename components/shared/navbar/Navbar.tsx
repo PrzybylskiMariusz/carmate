@@ -1,9 +1,10 @@
+import GlobalSearchbar from "../search/GlobalSearchbar";
 import Theme from "./Theme";
 
 const Navbar = () => {
 	return (
-		<nav className="flex-between background-light900_dark800 sticky z-50 w-full gap-5 p-6 sm:px-12">
-			<div>GlobalSearch</div>
+		<nav className="flex-between background-light900_dark800 light-border sticky z-50 box-border w-full gap-5 border-b py-6 max-sm:px-6">
+			<GlobalSearchbar />
 			<Theme />
 		</nav>
 	);

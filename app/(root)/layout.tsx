@@ -6,9 +6,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<main className="background-light900_dark800 relative flex">
 			<LeftSidebar />
-			<div className="relative w-full">
+			<div className="relative mx-12 w-full max-sm:mx-0">
 				<Navbar />
-				<div className="flex">
+				<div className="mt-6 flex">
 					<section>{children}</section>
 					RightSidebar
 				</div>
