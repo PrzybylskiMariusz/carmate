@@ -16,7 +16,7 @@ const Theme = () => {
 	return (
 		<Menubar className="relative border-none bg-transparent shadow-none">
 			<MenubarMenu>
-				<MenubarTrigger className="focus:bg-light-900 data-[state=open]:bg-light-900 dark:focus:bg-dark-800 dark:data-[state=open]:bg-dark-800">
+				<MenubarTrigger className="cursor-pointer p-2 focus:bg-light-900 data-[state=open]:bg-light-900 dark:focus:bg-dark-800 dark:data-[state=open]:bg-dark-800">
 					{mode === "light" ? (
 						<Image
 							src="/assets/icons/sun.svg"
@@ -60,7 +60,7 @@ const Theme = () => {
 							<p
 								className={`body-medium text-dark-900 ${
 									mode === item.value
-										? "text-accent-500"
+										? "text-primary-500"
 										: "text-dark900_light900"
 								}`}>
 								{item.label}

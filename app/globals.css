@@ -39,8 +39,8 @@ body {
 }
 
 .active-theme {
-	filter: invert(53%) sepia(98%) saturate(3332%) hue-rotate(0deg)
-		brightness(104%) contrast(106%) !important;
+	filter: brightness(0) saturate(100%) invert(30%) sepia(83%) saturate(5171%)
+		hue-rotate(227deg) brightness(108%) contrast(101%) !important;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
