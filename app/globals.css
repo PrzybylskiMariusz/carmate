@@ -34,6 +34,10 @@ body {
 	}
 }
 
+.calendar-today {
+	@apply bg-accent-100 rounded-full text-[12px] font-semibold leading-[18px];
+}
+
 .no-focus {
 	@apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
 }
