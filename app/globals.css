@@ -35,7 +35,19 @@ body {
 }
 
 .calendar-today {
-	@apply bg-accent-100 rounded-full text-[12px] font-semibold leading-[18px];
+	@apply bg-accent-100 rounded-full text-[12px] font-semibold leading-[18px] text-accent-500;
+}
+
+.rdp--weekend {
+	@apply text-accent-500;
+}
+
+.rdp-button {
+	@apply text-[12px] font-medium leading-[18px];
+}
+
+.rdp-head tr th {
+	@apply text-[12px] font-semibold leading-[18px];
 }
 
 .no-focus {
