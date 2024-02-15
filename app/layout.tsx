@@ -1,4 +1,6 @@
 import { ThemeProvider } from "@/context/ThemeProvider";
+import { plPL } from "@clerk/localizations";
+import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import React from "react";
@@ -26,7 +28,16 @@ export default function RootLayout({
 	return (
 		<html lang="pl">
 			<body className={poppins.variable}>
-				<ThemeProvider>{children}</ThemeProvider>
+				<ClerkProvider
+					localization={plPL}
+					appearance={{
+						elements: {
+							formButtonPrimary: "bg-primary-500",
+							footerActionLink: "text-primary-500 hover:text-dark-600",
+						},
+					}}>
+					<ThemeProvider>{children}</ThemeProvider>
+				</ClerkProvider>
 			</body>
 		</html>
 	);
