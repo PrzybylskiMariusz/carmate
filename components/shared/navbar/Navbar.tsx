@@ -1,3 +1,4 @@
+import { SignedIn, UserButton } from "@clerk/nextjs";
 import GlobalSearchbar from "../search/GlobalSearchbar";
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
@@ -10,6 +11,20 @@ const Navbar = () => {
 			<GlobalSearchbar />
 			<div className="flex-between gap-5">
 				<Theme />
+				<div className="h-[40px] w-[1px] rounded-sm bg-light-700 dark:bg-dark-700"></div>
+				<SignedIn>
+					<UserButton
+						appearance={{
+							elements: {
+								avatarBox: "h-10 w-10",
+							},
+							variables: {
+								colorPrimary: "#305EFF",
+							},
+						}}
+						afterSignOutUrl="/"
+					/>
+				</SignedIn>
 				<MobileNav />
 			</div>
 		</nav>
