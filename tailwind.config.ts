@@ -40,6 +40,9 @@ const config: Config = {
 			fontFamily: {
 				poppins: ["var(--font-poppins)"],
 			},
+			backgroundImage: {
+				auth: "url('/assets/images/loginImage@3x.png')",
+			},
 			screens: {
 				xs: "420px",
 			},
